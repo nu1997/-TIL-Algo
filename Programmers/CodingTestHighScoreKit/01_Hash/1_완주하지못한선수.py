@@ -23,3 +23,12 @@
 # print(solution(["leo", "kiki", "eden"], ["eden", "kiki"]))
 
 # O(n) + O(n) 밖에 없는지 잘 생각해보자
+
+def solution(participant, completion):
+    participant_s = sorted(participant)
+    completion_s = sorted(completion)
+    # print(participant_s, completion_s)
+    for i in range(len(completion_s)):
+        if participant_s[i] != completion_s[i]:
+            return participant_s[i]
+    return participant_s[-1]

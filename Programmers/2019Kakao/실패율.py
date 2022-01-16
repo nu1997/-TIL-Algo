@@ -29,4 +29,20 @@ def solution(N, stages):
 
     return answer
 
-print(solution(1, [0]))
+print(solution(4, [2, 2, 2, 2, 2]))
+
+
+'''
+def solution(N, stages):
+    user_status = {}
+    users = len(stages)
+    for stage in range(1, N + 1):
+        if users == 0:
+            user_status[stage] = 0
+            continue
+        count = stages.count(stage)
+        print(count)
+        user_status[stage] = count / users
+        users -= count
+    return sorted(user_status, key=lambda x: user_status[x], reverse=True)
+'''

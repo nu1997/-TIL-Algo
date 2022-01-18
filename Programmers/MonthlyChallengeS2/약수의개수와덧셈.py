@@ -9,4 +9,5 @@ def solution(left, right):
             answer -= num
         else:
             answer += num
+            
     return answer

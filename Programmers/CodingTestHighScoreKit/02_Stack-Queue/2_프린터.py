@@ -11,8 +11,6 @@ def solution(priorities, location):
     answer = a + b + 1
     return answer
 '''
-# 큰일났다... 진짜 모르겠다 이게 쉬운거면 어떡하냐고ㅜㅠㅜ....
-
 '''
 ## 다시 풀어봄 테케 2개 통과
 def solution(priorities, location):
@@ -38,7 +36,7 @@ def solution(priorities, location):
                 cnt += 1
         return key - cnt
 '''
-
+'''
 def solution(priorities, location):
     cnt_list = [0] * 10
     queue = []
@@ -64,3 +62,29 @@ def solution(priorities, location):
 
 print(solution([2, 1, 3, 2], 2))
 print(solution([1, 1, 9, 1, 1, 1], 0))
+'''
+
+def printing(array, flag):
+    printed = []
+    while array:
+        a = array.pop(0)
+        for doc in array:
+            if doc[0] > a[0]:
+                array.append(a)
+                break
+        else:
+            printed.append(a)
+            if a == flag:
+                return len(printed)
+
+def solution(priorities, location):
+    answer = 0
+    check = {x: 0 for x in range(1, 10)}
+    queue = []
+
+    for doc in priorities:
+        queue.append((str(doc) + str(check[doc])))
+        check[doc] += 1
+    flag = queue[location]
+    answer = printing(queue, flag)
+    return answer

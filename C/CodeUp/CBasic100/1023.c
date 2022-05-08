@@ -5,6 +5,9 @@
 #include <stdio.h>
 int main(){
   float x;
+  int a, b;
   scanf("%f", &x);
-  printf();
+  a = (int) x;
+  b = x * (10 ** (x-a));
+  printf("%d\n%d", a, b);
 }

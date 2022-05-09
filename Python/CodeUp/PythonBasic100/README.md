@@ -50,3 +50,50 @@ format(255, '#x'), format(255, 'x'), format(255, 'X')
 f'{255:#x}', f'{255:x}', f'{255:X}'
 ('0xff', 'ff', 'FF')
 ```
+
+### 최대공약수 - 반복문
+```python
+for i in range(min(a, b, c), 0, -1):
+    if a % i == 0 and b % i == 0 and c % i == 0:
+        print(i)
+        break
+```
+### 최소공배수 - 반복문
+```python
+for i in range(max(a, b, c), (a*b*c)+1):
+    if i % a == 0 and i % b == 0 and i % c == 0:
+        print(i)
+        break
+```
+
+### 최소공배수 - 유클리드 호제법 
+> x와 y의 최대공약수 == y 와 r의 최대공약수 (x % y = r)
+? 변수 3개에도 쓸 수 있는가?
+
+```python
+def GCD(x, y):
+    while y:
+        x, y = y, x % y
+    return x
+
+def LCM(x, y):
+    result = (x * y) // GCD(x, y)
+    return result
+
+print(LCM(a, b, c))
+```
+
+### reverse() / reversed() ?!
+
+변수에 할당할 수 있는가 없는가의 차이이다.
+```python
+a = [1, 2, 3, 4, 5]
+a.reverse()
+print(a) # [5, 4, 3, 2, 1]
+```
+
+```python
+a = [1, 2, 3, 4, 5]
+b = a.reversed()
+print(b) # [5, 4, 3, 2, 1]
+```

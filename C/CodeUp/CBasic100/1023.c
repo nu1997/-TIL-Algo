@@ -4,10 +4,11 @@
 
 #include <stdio.h>
 int main(){
-  float x;
+  float x, y;
   int a, b;
   scanf("%f", &x);
   a = (int) x;
-  b = x * (10 ** (x-a));
+  y = (x - a) * 100000;
+  printf("%f", y);
   printf("%d\n%d", a, b);
 }

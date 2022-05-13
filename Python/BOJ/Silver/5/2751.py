@@ -11,6 +11,8 @@
 import sys
 
 # 힙 정렬 heap sort
+    # https://ratsgo.github.io/data%20structure&algorithm/2017/09/27/heapsort/
+
 # 퀵 정렬 quick sort
 # 카운트 정렬 count sort
 # 내장함수 sort()

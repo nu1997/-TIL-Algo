@@ -8,11 +8,13 @@ while( ), for( ), do~while( ) 등의 반복문을 사용할 수 없다.
 */
 
 #include <stdio.h>
+
+
 int main(void) {
   int tc, n;
   scanf("%d", &tc);
   reload:
     scanf("%d", &n);
     printf("%d\n", n);
-    if (tc-- != 0) goto reload;
+    if (--tc > 0) goto reload;
 }

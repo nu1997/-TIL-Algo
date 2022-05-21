@@ -69,3 +69,6 @@ printf("%-10s\n", "Hello");
 Hello   
 ```
 
+### Xcode 오류 해결
+> https://m.kin.naver.com/mobile/qna/detail.nhn?d1id=1&dirId=1040105&docId=353744986&qb=Qw==&enc=utf8&section=kin.qna&rank=2&search_sort=0&spq=0
+

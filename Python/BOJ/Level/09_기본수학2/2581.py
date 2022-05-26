@@ -1,5 +1,5 @@
 
-''' 이게 뭐지?
+'''
 l = N - M
 sq = int(l ** 0.5)
 sieve = [True] * l

@@ -1,4 +1,3 @@
-import math
 
 N = int(input())
 
@@ -13,4 +12,4 @@ while N > 1:
 '''
 
 
-while N > 1:
+# while N > 1:

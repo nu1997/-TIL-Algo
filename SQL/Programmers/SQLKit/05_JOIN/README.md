@@ -43,3 +43,7 @@ FROM TABLEA A
 INNER JOIN TABLEB B
 ON A.KEY = B.KEY
 ```
+
+### JOIN 내용 보강하기
+cross join, count() over 등 
+https://devfunny.tistory.com/554

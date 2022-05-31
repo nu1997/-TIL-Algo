@@ -1,4 +1,4 @@
-# 카운팅 정렬
+# 카운팅 정렬 메모리 초과
 N = int(input())
 
 nums = []
@@ -22,3 +22,4 @@ for i in range(N-1, -1, -1): #987654321
 
 for num in ans:
     print(num)
+

@@ -1,3 +1,5 @@
+# 윤년
+
 Y = int(input())
 res = 0
 if Y % 4 == 0 and Y % 100 != 0:

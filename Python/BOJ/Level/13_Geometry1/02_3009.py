@@ -17,6 +17,22 @@ for coor in pair:
 print(*x, *y)
 
 '''
+def solution(v):
+    answer = []
+    x = set()
+    y = set()
+    for p in v:
+        x.add(p[0])
+        y.add(p[1])
+    x = list(x)
+    y = list(y)
+    for i in range(2):
+        for j in range(2):
+            if [x[i],y[j]] not in v:
+                return [x[i], y[j]]
+'''
+
+'''
 # XOR 연산 - 왜인지 메모리, 시간은 똑같다. 
 x = pair[0][0] ^ pair[1][0] ^ pair[2][0]
 y = pair[0][1] ^ pair[1][1] ^ pair[2][1]

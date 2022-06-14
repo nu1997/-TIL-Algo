@@ -3,6 +3,7 @@
 # 나머지가 모두 같아야 한다 ?!
 # 숫자는 최대 10 0000 0000 10억. for문 돌릴 수 없음.
 
+''' 틀렸습니다. 그리고 그리디라서 시간초과
 N = int(input())
 nums = []
 for _ in range(N):
@@ -27,4 +28,7 @@ for m in range(2, l):
                 flag = 1
     if flag == 1:
         ans.append(m)
-print(*ans)
+print(*sorted(ans))
+'''
+
+N = int(input())

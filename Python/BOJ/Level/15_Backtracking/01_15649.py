@@ -9,3 +9,4 @@ lst = combinations([x for x in range(1, N+1)], M)
 for el in lst:
     print(el)
 '''
+

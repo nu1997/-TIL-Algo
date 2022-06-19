@@ -19,7 +19,6 @@ for ts in range(1, T+1):
     for i in array:
         print(*i)
 '''
-# 구현 (재귀)
 # https://rh-tn.tistory.com/32
 
 N, K = map(int, input().split())
@@ -29,3 +28,9 @@ for i in range(N, N-K, -1):
 for j in range(K, 0, -1):
     ans //= j
 print(ans)
+
+# 구현 (재귀)
+def binomial(n, r):
+    if r == 0 or n == r:
+        return 1
+    return binomial(n-1, r-1) + binomial(n-1, r)

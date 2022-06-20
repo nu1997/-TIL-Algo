@@ -1,4 +1,5 @@
 # 이항 계수 2 - 동적 계획법
+# https://velog.io/@9566/511-동적계획과-이항계수
 
 def binomial(n, k):
     matrix = [[0 for _ in range(K+1)] for _ in range(N+1)]

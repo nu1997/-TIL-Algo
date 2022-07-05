@@ -1,6 +1,4 @@
 -- id, age, coins, power Ron interested in, sort in desc power, desc age
-
-
 -- point : power와 age별 최소 coins_needed에 해당하는 행만 출력
 
 SELECT W.ID, P.AGE, W.COINS_NEEDED, W.POWER

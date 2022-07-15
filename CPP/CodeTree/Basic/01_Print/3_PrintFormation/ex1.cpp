@@ -1,4 +1,5 @@
-// 출력 형식
+// 세 정수형 변수 선언
+
 
 #include <iostream>
 using namespace std;
